@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div class="block">
+      <span class="strike endgame" id="topStrike"></span>
+      <span class="strike endgame" id="midrowStrike"></span>
+      <span class="strike endgame" id="bottomStrike"></span>
+      <span class="strike endgame" id="leftStrike"></span>
+      <span class="strike endgame" id="rightStrike"></span>
+      <span class="strike endgame" id="midcolStrike"></span>
+      <span class="strike endgame" id="diagRStrike"></span>
+      <span class="strike endgame" id="diagLStrike"></span>
+
+      <table>
+        <tr>
+          <td class="cell left-border top-border" id="0"></td>
+          <td class="cell top-border" id="1"></td>
+          <td class="cell right-border top-border" id="2"></td>
+        </tr>
+        <tr>
+          <td class="cell left-border" id="3"></td>
+          <td class="cell" id="4"></td>
+          <td class="cell right-border" id="5"></td>
+        </tr>
+        <tr>
+          <td class="cell left-border bottom-border" id="6"></td>
+          <td class="cell bottom-border" id="7"></td>
+          <td class="cell bottom-border right-border" id="8"></td>
+        </tr>
+      </table>
+      <div class="text"></div>
+      <button onClick="startGame()">Replay</button>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
